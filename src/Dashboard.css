@@ -1,0 +1,124 @@
+/* Reset and body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fc;
+    overflow: hidden;
+}
+
+/* Main wrapper */
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Fixed top navbar */
+.dashboard-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: #0a0ef1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  gap: 16px;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard buttons */
+.Dashboard-button {
+  background-color: #10e43b;
+  color:black,pink;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  padding: 6px 15px;
+}
+
+.Dashboard-button:hover {
+  background-color: #e01515;
+}
+
+/* Main content (below navbar) */
+.dashboard-content {
+  margin-top: 60px; /* Same as navbar height */
+  padding: 30px;
+  overflow-y: auto;
+  height: calc(100vh - 60px);
+  background-color: #ffffff;
+}
+
+
+/* Wrapper for entire dashboard layout 
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+
+.dashboard-navbar {
+  background-color: #1976d2;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.Dashboard-button {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.Dashboard-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.dashboard-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f9fafb;
+}
+
+
+.dashboard-content::-webkit-scrollbar {
+  width: 6px;
+}
+.dashboard-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.dashboard-content::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+}*/

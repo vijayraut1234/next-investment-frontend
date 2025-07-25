@@ -1,0 +1,225 @@
+/* .mf-container {
+  padding: 30px;
+  background: #fffdf5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.mf-container h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #004f4f;
+  margin-bottom: 20px;
+}
+
+.mf-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.mf-controls input,
+.mf-controls select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.mf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 20px;
+}
+
+.mf-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.mf-card:hover {
+  transform: scale(1.03);
+}
+
+.mf-card h2 {
+  color: #002d40;
+}
+
+.mf-card p {
+  margin: 6px 0;
+}
+
+.mf-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mf-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: #00796b;
+  transition: background 0.3s ease;
+}
+
+.mf-actions button:hover {
+  background: #004d40;
+}
+
+.risk {
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.risk.low {
+  color: green;
+}
+
+.risk.medium {
+  color: orange;
+}
+
+.risk.high {
+  color: red;
+} */
+
+
+.mf-container {
+  padding: 30px;
+  background: #fffdf5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.mf-container h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #004f4f;
+  margin-bottom: 20px;
+}
+
+/* Controls: Search + Sort */
+.mf-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.mf-controls input,
+.mf-controls select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+/* Card Grid */
+.mf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+}
+
+/* Fund Card */
+.mf-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mf-card:hover {
+  transform: scale(1.03);
+}
+
+.mf-card h2 {
+  color: #002d40;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.mf-card p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Action Buttons */
+.mf-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mf-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: #00796b;
+  transition: background 0.3s ease;
+}
+
+.mf-actions button:hover {
+  background: #004d40;
+}
+
+/* Risk Indicator */
+.risk {
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.risk.low {
+  color: green;
+}
+
+.risk.medium {
+  color: orange;
+}
+
+.risk.high {
+  color: red;
+}
+
+/* ✅ Responsive for Mobile */
+@media (max-width: 500px) {
+  .mf-container {
+    padding: 15px;
+  }
+
+  .mf-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mf-controls input,
+  .mf-controls select {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .mf-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mf-actions button {
+    width: 100%;
+  }
+}
