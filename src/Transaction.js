@@ -22,7 +22,7 @@ function Transaction() {
 
 const fetchBalance = async () => {
   try {
-    const res = await axios.get("http://localhost:5005/api/balance", {
+    const res = await axios.get("https://next-investment-backend-76oe.onrender.com/api/balance", {
       withCredentials: true,  
     });
 
@@ -43,7 +43,7 @@ const fetchBalance = async () => {
 
 const fetchTransactions = async () => {
   try {
-    const res = await axios.get("http://localhost:5005/api/transactions", {
+    const res = await axios.get("https://next-investment-backend-76oe.onrender.com/api/transactions", {
       withCredentials: true // ✅ Cookies automatically sent to server
     });
     setTransactions(res.data);
@@ -67,7 +67,7 @@ const handleSubmit = async (e) => {
   }
 
   try {
-    const res = await axios.post("http://localhost:5005/api/transactions", {
+    const res = await axios.post("https://next-investment-backend-76oe.onrender.com", {
       amount: parseFloat(amount),
       type,
       bankName,
